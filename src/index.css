@@ -6,6 +6,8 @@
   --green:#2E9F5C;
   --green-bright:#3EDB80;
   --red:#C8402E;
+  --blue:#2F5CE0;
+  --blue-bright:#4E7DFF;
   --ink:#FFFFFF;
   --ink-dim:#A8A8A8;
   --ink-faint:#666666;
@@ -30,7 +32,7 @@ img,svg{ display:block; max-width:100%; }
   font-weight:600;
   letter-spacing:0.16em;
   text-transform:uppercase;
-  color:var(--green-bright);
+  color:var(--blue-bright);
 }
 
 /* ---------- NAV ---------- */
@@ -77,7 +79,7 @@ nav.desk{ display:none; gap:28px; font-size:13px; color:var(--ink-dim); font-wei
 .hero-bg{
   position:absolute; inset:0; z-index:0;
   background:
-    radial-gradient(ellipse 100% 60% at 80% 90%, rgba(46,159,92,0.28), transparent 60%),
+    radial-gradient(ellipse 100% 60% at 80% 90%, rgba(47,92,224,0.30), transparent 60%),
     linear-gradient(180deg, #000000 0%, #060706 55%, #000000 100%);
 }
 .hero-grain{
@@ -91,15 +93,15 @@ nav.desk{ display:none; gap:28px; font-size:13px; color:var(--ink-dim); font-wei
   border:1px solid var(--line); padding:6px 12px; border-radius:99px;
   font-size:11px; font-weight:500; color:var(--ink-dim); margin-bottom:22px;
 }
-.dot-live{ width:6px; height:6px; border-radius:50%; background:var(--green-bright); box-shadow:0 0 0 0 rgba(62,219,128,0.6); animation:pulse 2s infinite; }
-@keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(62,219,128,0.5);} 70%{box-shadow:0 0 0 8px rgba(62,219,128,0);} 100%{box-shadow:0 0 0 0 rgba(62,219,128,0);} }
+.dot-live{ width:6px; height:6px; border-radius:50%; background:var(--blue-bright); box-shadow:0 0 0 0 rgba(78,125,255,0.6); animation:pulse 2s infinite; }
+@keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(78,125,255,0.5);} 70%{box-shadow:0 0 0 8px rgba(78,125,255,0);} 100%{box-shadow:0 0 0 0 rgba(78,125,255,0);} }
 .hero h1{ font-size:46px; line-height:0.98; max-width:640px; font-weight:600; }
-.hero h1 em{ font-style:normal; color:var(--green-bright); }
+.hero h1 em{ font-style:normal; color:var(--blue-bright); }
 .hero p.sub{ margin-top:20px; max-width:420px; color:var(--ink-dim); font-size:15px; line-height:1.6; }
 .cta-row{ margin-top:32px; display:flex; gap:12px; flex-wrap:wrap; }
 .btn{ padding:14px 22px; font-size:12px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase; border-radius:2px; display:inline-block; transition:.25s; }
 .btn-primary{ background:var(--ink); color:#000; }
-.btn-primary:hover{ background:var(--green-bright); }
+.btn-primary:hover{ background:var(--blue-bright); color:#fff; }
 .btn-ghost{ border:1px solid var(--line); color:var(--ink); }
 .btn-ghost:hover{ border-color:var(--ink-dim); }
 
@@ -115,7 +117,7 @@ nav.desk{ display:none; gap:28px; font-size:13px; color:var(--ink-dim); font-wei
 .stat .label{ font-size:11px; font-weight:500; letter-spacing:0.04em; text-transform:uppercase; color:var(--ink-dim); margin-top:6px; }
 
 /* ---------- SECTIONS ---------- */
-.section{ padding:80px 0; }
+.section{ padding:96px 0; }
 .section-head{ padding:0 20px; margin-bottom:36px; }
 .section-head h2{ font-size:30px; margin-top:10px; max-width:480px; font-weight:600; }
 .process-scroll{
@@ -128,7 +130,7 @@ nav.desk{ display:none; gap:28px; font-size:13px; color:var(--ink-dim); font-wei
   background:var(--panel); border:1px solid var(--line); border-radius:4px;
   padding:22px;
 }
-.pcard .idx{ font-family:'Archivo',sans-serif; color:var(--green-bright); font-size:13px; font-weight:700; }
+.pcard .idx{ font-family:'Archivo',sans-serif; color:var(--blue-bright); font-size:13px; font-weight:700; }
 .pcard h3{ font-size:19px; margin-top:14px; font-weight:600; }
 .pcard p{ font-size:13px; color:var(--ink-dim); margin-top:8px; line-height:1.55; }
 
@@ -145,7 +147,7 @@ nav.desk{ display:none; gap:28px; font-size:13px; color:var(--ink-dim); font-wei
 }
 .pillar summary::-webkit-details-marker{ display:none; }
 .pillar summary .plus{ font-size:16px; color:var(--ink-faint); transition:.3s; }
-.pillar[open] summary .plus{ transform:rotate(45deg); color:var(--green-bright); }
+.pillar[open] summary .plus{ transform:rotate(45deg); color:var(--blue-bright); }
 .pillar .body{ padding-bottom:22px; max-width:560px; }
 .pillar .body h3{ font-size:22px; font-weight:600; }
 .pillar .body p{ font-size:14px; color:var(--ink-dim); margin-top:10px; line-height:1.6; }
@@ -176,7 +178,7 @@ nav.desk{ display:none; gap:28px; font-size:13px; color:var(--ink-dim); font-wei
 /* ---------- CTA FINAL ---------- */
 .cta-final{
   margin:0 20px; border-radius:6px; padding:48px 26px;
-  background:linear-gradient(160deg, #0F2E1B, #000 70%);
+  background:linear-gradient(160deg, #0B1C4D, #000 70%);
   border:1px solid var(--line);
   text-align:left;
 }
